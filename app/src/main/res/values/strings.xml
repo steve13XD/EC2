@@ -4,4 +4,19 @@
     <string name="btnformulario">FORMULARIO</string>
     <string name="btnlistado">LISTADO</string>
     <string name="TítuloToolBar">AppIDAT</string>
+    <string name="TituloCuestionario">CUESTIONARIO</string>
+    <string name="sub1">1. Marque sus platos favoritos</string>
+    <string name="valArrozPollo">Arroz con Pollo</string>
+    <string name="vallomo">Lomo Saltado</string>
+    <string name="valajigallina">Ají de Gallina</string>
+    <string name="valtallarines">Tallarines</string>
+    <string name="valarrozchaufa">Arroz Chaufa</string>
+    <string name="valotros">Otros</string>
+    <string name="sub2">2. ¿Visitaste algún país de Europa, Asia o Africa?</string>
+    <string name="valsi">SI</string>
+    <string name="valno">NO</string>
+    <string name="sub3">3. ¿Hablas Inglés?</string>
+    <string name="sub4">4. ¿Te Gusta la Tecnología?</string>
+    <string name="sub5">4. ¿Realiza Trabajo Remoto?</string>
+    <string name="valresolver">Resolver</string>
 </resources>
