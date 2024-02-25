@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="@string/valapp"
         app:titleTextColor="@android:color/white"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -63,7 +63,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edApellido"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/valapellido"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/edNombre"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/edApellido"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
@@ -225,18 +225,16 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAcceder"
         android:layout_width="245dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/rectangle_button_background"
         android:text="@string/valacceder"
         app:icon="@drawable/baseline_check_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     <string name="btnregistro">REGISTRO</string>
     <string name="btnformulario">FORMULARIO</string>
     <string name="btnlistado">LISTADO</string>
+
     <string name="valinformacion">INFORMACIÓN</string>
     <string name="valapp">AppIDAT</string>
     <string name="valnombre">Nombre</string>
@@ -21,4 +22,12 @@
     <string name="valciencias">Ciencias Médicas</string>
     <string name="valadministracion">Administracion</string>
     <string name="valacceder">Acceder\n</string>
+    <string name="errorcampos">Todos los campos tienen que ser completados!!</string>
+    <string name="errorcualidad">Debe de seleccionar una cualidad</string>
+=======
+    <string name="TítuloToolBar">AppIDAT</string>
+    <string name ="errorvalidacion">Los campos deben estar completos</string>
+    <string name="errorcarrera">Debe seleccionar una carrera</string>
+    <string name="notificacion">Informacion Registrada con Exito!!</string>
+    >>>>>>> db98b131a184ff6724d5bf701ac1e0beba44d74f
 </resources>
