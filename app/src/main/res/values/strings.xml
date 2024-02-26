@@ -46,5 +46,11 @@
     <string name="errorcarrera">Debe seleccionar una carrera</string>
     <string name="notificacion">Informacion Registrada con Exito!!</string>
     <string name="tvTituloTest">LISTA DE TEST PSICOLOGICO</string>
+    <string name="rtvTituloTP">Titulo</string>
+    <string name="rtvDescripcionTP">Descripcion</string>
+    <string name="rtvFechaPublicacionTP">Fecha Publicacion</string>
+    <string name="rtbListaTestPsicologico">LISTA DE TEST PSICOLOGICO</string>
+    <string name="rtbListatestPsiologico">LISTA DE TESTS PSICOLOGICO</string>
+    <string name="rtbTitutloListaTP">LISTA DE TESTS PSICOLOGICO</string>
 
 </resources>
