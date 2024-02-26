@@ -244,6 +244,16 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        <Button
+            android:id="@+id/btnlistainfo"
+            android:layout_width="245dp"
+            android:layout_height="48dp"
+            android:text="@string/vallistarinfo"
+            app:icon="@drawable/baseline_view_list_24"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/btnAcceder"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

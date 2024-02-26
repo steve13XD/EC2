@@ -16,10 +16,10 @@
     <string name="valrespetuoso">Respetuoso</string>
     <string name="valresponsable">Responsable</string>
     <string name="valotracualidad">Ingrese otra Cualidad</string>
-    <string name="valcarrera">Seleccione la carrera a Estudiar</string>
-    <string name="valingeneria">Ingenieria</string>
-    <string name="valciencias">Ciencias Médicas</string>
-    <string name="valadministracion">Administracion</string>
+    <string name="valcarrera">Estado Civil:</string>
+    <string name="valingeneria">Soltero</string>
+    <string name="valciencias">Casado</string>
+    <string name="valadministracion">Divorciado</string>
     <string name="valacceder">Acceder\n</string>
     <string name="errorcampos">Todos los campos tienen que ser completados!!</string>
     <string name="errorcualidad">Debe de seleccionar una cualidad</string>
@@ -52,5 +52,7 @@
     <string name="rtbListaTestPsicologico">LISTA DE TEST PSICOLOGICO</string>
     <string name="rtbListatestPsiologico">LISTA DE TESTS PSICOLOGICO</string>
     <string name="rtbTitutloListaTP">LISTA DE TESTS PSICOLOGICO</string>
+    <string name="vallistainfo">LISTA DE INFORMACIÓN</string>
+    <string name="vallistarinfo">Lista de Informacion</string>
 
 </resources>
