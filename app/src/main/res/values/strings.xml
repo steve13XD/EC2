@@ -3,7 +3,29 @@
     <string name="btnregistro">REGISTRO</string>
     <string name="btnformulario">FORMULARIO</string>
     <string name="btnlistado">LISTADO</string>
+
+    <string name="valinformacion">INFORMACIÓN</string>
+    <string name="valapp">AppIDAT</string>
+    <string name="valnombre">Nombre</string>
+    <string name="valapellido">Apellido</string>
+    <string name="valdni">DNI</string>
+    <string name="valcelular">Numero de Celular</string>
+    <string name="valemail">E-mail</string>
+    <string name="valcualidades">Seleccione sus Cualidades:</string>
+    <string name="valpuntual">Puntual</string>
+    <string name="valrespetuoso">Respetuoso</string>
+    <string name="valresponsable">Responsable</string>
+    <string name="valotracualidad">Ingrese otra Cualidad</string>
+    <string name="valcarrera">Seleccione la carrera a Estudiar</string>
+    <string name="valingeneria">Ingenieria</string>
+    <string name="valciencias">Ciencias Médicas</string>
+    <string name="valadministracion">Administracion</string>
+    <string name="valacceder">Acceder\n</string>
+    <string name="errorcampos">Todos los campos tienen que ser completados!!</string>
+    <string name="errorcualidad">Debe de seleccionar una cualidad</string>
+=======
     <string name="TítuloToolBar">AppIDAT</string>
+
     <string name="TituloCuestionario">CUESTIONARIO</string>
     <string name="sub1">1. Marque sus platos favoritos</string>
     <string name="valArrozPollo">Arroz con Pollo</string>
@@ -19,4 +41,9 @@
     <string name="sub4">4. ¿Te Gusta la Tecnología?</string>
     <string name="sub5">4. ¿Realiza Trabajo Remoto?</string>
     <string name="valresolver">Resolver</string>
+=======
+    <string name ="errorvalidacion">Los campos deben estar completos</string>
+    <string name="errorcarrera">Debe seleccionar una carrera</string>
+    <string name="notificacion">Informacion Registrada con Exito!!</string>
+
 </resources>
