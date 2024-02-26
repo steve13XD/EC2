@@ -23,7 +23,7 @@
     <string name="valacceder">Acceder\n</string>
     <string name="errorcampos">Todos los campos tienen que ser completados!!</string>
     <string name="errorcualidad">Debe de seleccionar una cualidad</string>
-=======
+    =======
     <string name="TítuloToolBar">AppIDAT</string>
 
     <string name="TituloCuestionario">CUESTIONARIO</string>
@@ -41,9 +41,10 @@
     <string name="sub4">4. ¿Te Gusta la Tecnología?</string>
     <string name="sub5">4. ¿Realiza Trabajo Remoto?</string>
     <string name="valresolver">Resolver</string>
-=======
-    <string name ="errorvalidacion">Los campos deben estar completos</string>
+    =======
+    <string name="errorvalidacion">Los campos deben estar completos</string>
     <string name="errorcarrera">Debe seleccionar una carrera</string>
     <string name="notificacion">Informacion Registrada con Exito!!</string>
+    <string name="tvTituloTest">LISTA DE TEST PSICOLOGICO</string>
 
 </resources>
