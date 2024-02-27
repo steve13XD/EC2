@@ -2,10 +2,8 @@ package pe.edu.idat.evaluacioncontinua2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
-import pe.edu.idat.evaluacioncontinua2.R
 import pe.edu.idat.evaluacioncontinua2.databinding.ActivityListaInfoBinding
 
 class ListaInfoActivity : AppCompatActivity(), View.OnClickListener {

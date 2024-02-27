@@ -1,20 +1,24 @@
 package pe.edu.idat.evaluacioncontinua2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import pe.edu.idat.evaluacioncontinua2.databinding.ActivityFormularioBinding
 import pe.edu.idat.evaluacioncontinua2.util.AppMensaje
 import pe.edu.idat.evaluacioncontinua2.util.TipoMensaje
+import kotlin.collections.joinToString
 
 class FormularioActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding:ActivityFormularioBinding
+    private var listaformulario = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFormularioBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnResolver.setOnClickListener(this)
         binding.tbAppIDAT.setOnClickListener(this)
+        binding.btnListaFormulario.setOnClickListener(this)
 
     }
 
@@ -92,12 +96,96 @@ class FormularioActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    private fun registrarFormulario(){
+        if (ValidarCuestionario()){
+            var formulario = "Sus platos favoritos son: " + ObtenerPlatos() +
+            "\n  " + ObtenerVisita() + " visitó Europa, Asia o África" +
+                    "\n " + ObtenerIngles() + " habla inglés" +
+                    "\n " + ObtenerTecnologia() + " le gusta la tecnología" +
+                    "\n " + ObtenerTrabajo() + " realiza trabajo remoto"
+
+
+
+            listaformulario.add(formulario)
+
+        }
+
+
+    }
+
+    fun ObtenerTrabajo():String{
+        return when(binding.rgTrabajo.checkedRadioButtonId){
+            R.id.rbTrabajoSI -> binding.rbTrabajoSI.text.toString()
+            R.id.rbTrabajoNo -> binding.rbTrabajoNo.text.toString()
+            else -> "Ninguna opción fue seleccionada"
+        }
+    }
+
+    fun ObtenerTecnologia():String{
+        return when (binding.rgTecnologia.checkedRadioButtonId){
+            R.id.rbTecSi -> binding.rbTecSi.text.toString()
+            R.id.rbTecNo -> binding.rbTecNo.text.toString()
+            else -> "Ninguna opción fue seleccionada"
+        }
+    }
+
+    fun ObtenerIngles():String{
+        return when (binding.rgIngles.checkedRadioButtonId){
+            R.id.rbInglesSi -> binding.rbInglesSi.text.toString()
+            R.id.rbInglesNo -> binding.rbInglesNo.text.toString()
+            else -> "Ninguna opción fue seleccionada"
+        }
+    }
+
+    fun ObtenerVisita():String{
+        return when (binding.rgPais.checkedRadioButtonId){
+            R.id.rbPaisSi -> binding.rbPaisSi.text.toString()
+            R.id.rbPaisNo -> binding.rbPaisNo.text.toString()
+            else -> "Ninguna opción fue seleccionada"
+        }
+    }
+
+    fun ObtenerPlatos():String{
+        val platosSeleccionados = mutableListOf<String>()
+
+        if (binding.cbArrozConPollo.isChecked){
+            platosSeleccionados.add(binding.cbArrozConPollo.text.toString())
+        }
+        if (binding.cbLomoSaltado.isChecked){
+            platosSeleccionados.add(binding.cbLomoSaltado.text.toString())
+        }
+        if (binding.cbAjiGallina.isChecked){
+            platosSeleccionados.add(binding.cbAjiGallina.text.toString())
+        }
+        if (binding.cbTallarines.isChecked){
+            platosSeleccionados.add(binding.cbTallarines.text.toString())
+        }
+        if (binding.cbArrozChaufa.isChecked){
+            platosSeleccionados.add(binding.cbArrozChaufa.text.toString())
+        }
+        if (binding.cbOtros.isChecked){
+            platosSeleccionados.add(binding.cbOtros.text.toString())
+        }
+
+        return platosSeleccionados.joinToString(separator = ", ")
+    }
+
+
+    private fun irListaFormulario(){
+        var intent = Intent(applicationContext,ListaFormularioActivity::class.java).apply {
+            putExtra("listaformulario", listaformulario)
+        }
+        startActivity(intent)
+
+    }
+
     override fun onClick(v: View?) {
         when(v?.id){
-            binding.btnResolver.id -> {
-                if(ValidarCuestionario()){}
-            }
-            binding.tbAppIDAT.id ->{
+            R.id.btnResolver -> registrarFormulario()
+
+            R.id.btnListaFormulario -> irListaFormulario()
+
+            R.id.tbAppIDAT ->{
                 onBackPressed()
             }
 
