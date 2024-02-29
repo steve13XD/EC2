@@ -3,6 +3,7 @@ package pe.edu.idat.evaluacioncontinua2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import pe.edu.idat.evaluacioncontinua2.databinding.ActivityRegistroBinding
 import pe.edu.idat.evaluacioncontinua2.util.AppMensaje
@@ -90,6 +91,7 @@ class RegistroActivity : AppCompatActivity(), View.OnClickListener{
                     obtenerCualidades()+"\nCarrera: "+
                     obtenerCarrera()
             listaInfo.add(infor)
+            Log.i("REGPER", infor)
             AppMensaje.noti(binding.root, getString(R.string.notificacion), TipoMensaje.CORRECTO)
         }
     }
